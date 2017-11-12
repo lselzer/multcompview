@@ -229,8 +229,12 @@ function(x, compare="<",
     Ltrs <- rep(Letters[1], n)
     names(Ltrs) <- Lvls
     dimnames(LetMat)[[2]] <- Letters[1]
-    return(list(Letters=Ltrs,
-                LetterMatrix=LetMat))  
+    monoVec <- Ltrs
+    res <- list(Letters=Ltrs,
+                         monospacedLetters=monoVec, 
+                         LetterMatrix=LetMat)
+    class(res) <- "multcompLetters"
+    return(res)  
   }
 ##
 ## 4.  At last 2 levels are different: 
@@ -324,6 +328,7 @@ function(x, compare="<",
 ##
 ## 7.  Create simple summaries
 ##
+  browser()
   LetVec <- rep(NA, n)
   names(LetVec) <- Lvls
   for(i in 1:n)
