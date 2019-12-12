@@ -46,8 +46,9 @@ exp_tukey <- TukeyHSD(exp_aov <- aov(y  ~ treatments, data = experiment))
 
 extract_p(exp_tukey)
 
-require(pgirmess)
+if(require(pgirmess)){
 extract_p(kruskalmc(y ~ treatments, data = experiment))
+}
 
 
 }
