@@ -100,14 +100,14 @@ terms and interactions.
 }
 \section{Functions}{
 \itemize{
-\item \code{multcompLetters2}: 
+\item \code{multcompLetters2()}: 
 
-\item \code{multcompLetters3}: create a compact letters display and order the 
+\item \code{multcompLetters3()}: create a compact letters display and order the 
 letters
 
-\item \code{multcompLetters4}: create a compact letters display using a aov object
-}}
+\item \code{multcompLetters4()}: create a compact letters display using a aov object
 
+}}
 \examples{
 
 ##

@@ -27,13 +27,13 @@ and extract its value mantaining its names
 }
 \section{Methods (by class)}{
 \itemize{
-\item \code{default}: 
+\item \code{extract_p(default)}: 
 
-\item \code{TukeyHSD}: extract p values from a TukeyHSD object
+\item \code{extract_p(TukeyHSD)}: extract p values from a TukeyHSD object
 
-\item \code{mc}: 
+\item \code{extract_p(mc)}: 
+
 }}
-
 \examples{
 
 experiment <- data.frame(treatments = gl(11, 20, labels = c("dtl", "ctrl", "treat1", 

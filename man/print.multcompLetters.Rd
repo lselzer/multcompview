@@ -17,7 +17,7 @@ representation.}
 \code{\link{print}} help page.}
 }
 \value{
-x\$Letters = the named, character vector representation of the
+the named, character vector representation of the
 'multcompLetters' evaluation of the distance relationships
 }
 \description{

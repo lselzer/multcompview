@@ -55,7 +55,7 @@ extract_p.TukeyHSD <- function(x) {
 #' 
 
 extract_p.mc <- function(x){
-  ans <- x[["dif.com"]][, "difference"]
+  ans <- x[["dif.com"]][, "stat.signif"]
   names(ans) <- rownames(x[["dif.com"]])
   ans
 }
