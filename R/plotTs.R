@@ -67,13 +67,6 @@
 #' @param orientation If 'reversed', the base(s) of each "T" or traingle
 #' indicating the master level(s) of that "undifferentiated class" will point
 #' right or up (depending on horizontal) rather than down or left.
-#' @param font.family character string naming the font family used by
-#' "plotLetters".  This function plots the different "Letters" in different
-#' colors by plotting one color at a time.  It's currently not smart enough to
-#' align the letters properly except by assuming a mono-spaced font.
-#' @param fig figure region = (x0, x1, y0, y1) as a proportion of the device
-#' region.
-#' @param mar margin = (lower, left, upper, right) in lines.
 #' @param ...  graphical parameters can be given as described on the
 #' \code{\link{plot}} help page or the \code{\link[grid]{gpar}} help page.
 #' @return "Done"

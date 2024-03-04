@@ -56,23 +56,13 @@
 #' @param add TRUE to add to an existing plot; FALSE to start a new plot.  The
 #' names of the factor levels or items compared will be plotted only if
 #' add=FALSE.
-#' @param lwd line width for the display outline.
 #' @param label.levels Distance from the plot region to print the names of the
 #' levels as a proportion of the plot range; NA for no level labels.
 #' @param label.groups Distance from the plot region to print the names of the
 #' groups as a proportion of the plot range; NA for no level labels.
-#' @param T.base A numeric scalar giving the proportion of the available space
-#' devoted to the base of the Ts.
 #' @param orientation If 'reversed', the base(s) of each "T" or traingle
 #' indicating the master level(s) of that "undifferentiated class" will point
 #' right or up (depending on horizontal) rather than down or left.
-#' @param font.family character string naming the font family used by
-#' "plotLetters".  This function plots the different "Letters" in different
-#' colors by plotting one color at a time.  It's currently not smart enough to
-#' align the letters properly except by assuming a mono-spaced font.
-#' @param fig figure region = (x0, x1, y0, y1) as a proportion of the device
-#' region.
-#' @param mar margin = (lower, left, upper, right) in lines.
 #' @param ...  graphical parameters can be given as described on the
 #' \code{\link{plot}} help page or the \code{\link[grid]{gpar}} help page.
 #' @return "Done"

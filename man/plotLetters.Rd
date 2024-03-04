@@ -58,22 +58,6 @@ region.}
 
 \item{...}{graphical parameters can be given as described on the
 \code{\link{plot}} help page or the \code{\link[grid]{gpar}} help page.}
-
-\item{width}{an array with one row for each group of levels in the display
-and 3 columns giving low, middle and high levels for the display for that
-group.}
-
-\item{lwd}{line width for the display outline.}
-
-\item{label.groups}{Distance from the plot region to print the names of the
-groups as a proportion of the plot range; NA for no level labels.}
-
-\item{T.base}{A numeric scalar giving the proportion of the available space
-devoted to the base of the Ts.}
-
-\item{orientation}{If 'reversed', the base(s) of each "T" or traingle
-indicating the master level(s) of that "undifferentiated class" will point
-right or up (depending on horizontal) rather than down or left.}
 }
 \value{
 "Done"

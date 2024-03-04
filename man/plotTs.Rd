@@ -66,16 +66,6 @@ right or up (depending on horizontal) rather than down or left.}
 
 \item{...}{graphical parameters can be given as described on the
 \code{\link{plot}} help page or the \code{\link[grid]{gpar}} help page.}
-
-\item{font.family}{character string naming the font family used by
-"plotLetters".  This function plots the different "Letters" in different
-colors by plotting one color at a time.  It's currently not smart enough to
-align the letters properly except by assuming a mono-spaced font.}
-
-\item{fig}{figure region = (x0, x1, y0, y1) as a proportion of the device
-region.}
-
-\item{mar}{margin = (lower, left, upper, right) in lines.}
 }
 \value{
 "Done"

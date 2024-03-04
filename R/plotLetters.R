@@ -41,9 +41,6 @@
 #' of obj).
 #' @param at an array with one row for each level and 3 columns giving low,
 #' middle and high levels for the display for that level.
-#' @param width an array with one row for each group of levels in the display
-#' and 3 columns giving low, middle and high levels for the display for that
-#' group.
 #' @param horizontal A logical scalar indicating whether the list of items
 #' compared reads left to right (horizontal = TRUE) or top to bottom
 #' (horizontal = FALSE).  If this multcomp graphic accompanies boxplots for
@@ -57,16 +54,8 @@
 #' @param add TRUE to add to an existing plot; FALSE to start a new plot.  The
 #' names of the factor levels or items compared will be plotted only if
 #' add=FALSE.
-#' @param lwd line width for the display outline.
 #' @param label.levels Distance from the plot region to print the names of the
 #' levels as a proportion of the plot range; NA for no level labels.
-#' @param label.groups Distance from the plot region to print the names of the
-#' groups as a proportion of the plot range; NA for no level labels.
-#' @param T.base A numeric scalar giving the proportion of the available space
-#' devoted to the base of the Ts.
-#' @param orientation If 'reversed', the base(s) of each "T" or traingle
-#' indicating the master level(s) of that "undifferentiated class" will point
-#' right or up (depending on horizontal) rather than down or left.
 #' @param font.family character string naming the font family used by
 #' "plotLetters".  This function plots the different "Letters" in different
 #' colors by plotting one color at a time.  It's currently not smart enough to
