@@ -1,7 +1,6 @@
 #' Convert a vector with hyphenated names into a matrix.
 #' 
 #' Convert a vector with hypehnated names into a symmetric matrix with names
-#' obtained from vect2mat2(names(x)).
 #' 
 #' x must have names each of which contains exactly one hyphen; if not, vec2mat
 #' issues an error message.  If the same comparison is present multiple times,
@@ -12,7 +11,7 @@
 #' or (2) a matrix indicating same.  If x is already a matrix, it is checked
 #' for symmetry.  NAs are not allowed.
 #' @param sep "strsplit" character to apply to names(x).
-#' @return A symmetrix matrix of the same class as the input with names
+#' @return A symmetric matrix of the same class as the input with names
 #' obtained from unique(strsplit(names(x))).  All nonspecified elements will be
 #' 1 if class(x) is numeric, FALSE if logical and "" if character.  Used by the
 #' functions 'multcompLetters' and 'multcompTs'.

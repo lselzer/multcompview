@@ -35,7 +35,7 @@ actually translates to 'TukeyHSD(aov(formula, data))[[1]][, "p adj"]'.}
 \item{sortFn}{If sortFn is a function or a character string naming a
 function, it is used to summarize the subset of y corresponding to each
 level of z into a single number, which will then be used to sort the levels
-of z according to the argumment 'decreasing'.  This step is skipped if
+of z according to the argument 'decreasing'.  This step is skipped if
 sortFn is NULL or NA or if it is neither a function nor a character string
 that might name a function.  If sortFn is a character string but a function
 by that name is not found in the search path, multcompBoxplot stops with,

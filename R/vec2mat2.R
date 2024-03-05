@@ -9,7 +9,7 @@
 #' @param x Vector of hyphenated names
 #' @param sep "strsplit" character to apply to names(x).
 #' @return A character matrix with rownames = x and with the character string
-#' preceeding the "sep" character in the first column and the character string
+#' preceding the "sep" character in the first column and the character string
 #' following the "sep" character in the second column.
 #' @author Spencer Graves
 #' @seealso \code{\link{vec2mat}} \code{\link{multcompLetters}}

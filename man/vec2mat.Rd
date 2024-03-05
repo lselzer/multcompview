@@ -15,14 +15,13 @@ for symmetry.  NAs are not allowed.}
 \item{sep}{"strsplit" character to apply to names(x).}
 }
 \value{
-A symmetrix matrix of the same class as the input with names
+A symmetric matrix of the same class as the input with names
 obtained from unique(strsplit(names(x))).  All nonspecified elements will be
 1 if class(x) is numeric, FALSE if logical and "" if character.  Used by the
 functions 'multcompLetters' and 'multcompTs'.
 }
 \description{
 Convert a vector with hypehnated names into a symmetric matrix with names
-obtained from vect2mat2(names(x)).
 }
 \details{
 x must have names each of which contains exactly one hyphen; if not, vec2mat

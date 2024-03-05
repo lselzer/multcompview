@@ -93,8 +93,8 @@ devoted to the base of the Ts; used only when type="Ts".}
 A list with two components: \item{at }{ A matrix with three columns
 giving the middle and extremes of the display for each of the factor levels
 or items compared.  } \item{width }{ A matrix with as many rows as "Ts" or
-comparitor levels and with two columns giving the plot range for that
-comparitor level.  }
+comparator levels and with two columns giving the plot range for that
+comparator level.  }
 }
 \description{
 Plot graphic(s) for multcompTs or multcompLetters objects

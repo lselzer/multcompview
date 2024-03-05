@@ -37,9 +37,9 @@ If x is a matrix, its diagonal must be or must convert to FALSE.}
 
 \item{Letters}{Vector of distinct characters (or character strings) used to
 connect levels that are not significantly different.  They should be
-recogizable when concatonated.  The last element of "Letters" is used as a
+recognizable when concatenated.  The last element of "Letters" is used as a
 prefix for a reuse of "Letters" if more are needed than are provided.  For
-example, with the default "Letters", if 53 distinct connection colums are
+example, with the default "Letters", if 53 distinct connection columns are
 required, they will be "a", ..., "z", "A", ..., "Z", and ".a".  If 54 are
 required, the last one will be ".b".  If 105 are required, the last one will
 be "..a", etc.  (If the algorithm generates that many distinct groups, the
@@ -72,10 +72,10 @@ in which common values of the function argument "Letters" identify levels or
 groups that are not significantly different (or more precisely for which the
 corresponding element of "x" was FALSE or was converted to FALSE by
 "compare").  } \item{monospacedLetters }{ Same as "Letters" but with spaces
-so the individual grouping letters will line up with a monspaced type font.
+so the individual grouping letters will line up with a monospaced type font.
 } \item{LetterMatrix }{Logical matrix with one row for each level compared
 and one column for each "Letter" in the "letter-based representation".  The
-output component "Letters" is obtained by concatonating the column names of
+output component "Letters" is obtained by concatenating the column names of
 all columns with TRUE in that row.  } multcompLetters4 will return a named
 list with the terms containing a object of class 'multcompLetters' as
 produced by \code{multcompLetters}.
@@ -93,7 +93,7 @@ described by Piepho (2004).  (The present algorithm does NOT perform his
 "sweeping" step.)  \code{multcompLettersx} are wrapper of multcompLetters
 that will reorder the levels of the data so that the letters appear in a
 descending order of the mean. \code{mulcompletters3} is similar to
-\code{multcompletters2} except that it uses vector names to separte and the
+\code{multcompletters2} except that it uses vector names to separate and the
 later has an formula interface. \code{multcompLetters4} will take a aov or
 lm object and a comparison test and will produce all the letters for the
 terms and interactions.
@@ -131,7 +131,7 @@ names(dif4) <- c("a-b", "a-c", "b-d", "a-d")
        Letters=c("*", ".")))
 # "Letters" can be any character strings,
 # but they should be recognizable when
-# concatonated.
+# concatenated.
 
 ##
 ## 3.  distance matrix

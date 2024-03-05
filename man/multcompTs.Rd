@@ -2,7 +2,7 @@
 % Please edit documentation in R/multcompTs.R
 \name{multcompTs}
 \alias{multcompTs}
-\title{"T" depiction of undiffentiated classes}
+\title{"T" depiction of undifferentiated classes}
 \usage{
 multcompTs(x, compare = "<", threshold = 0.05, sep = ".")
 }
@@ -21,7 +21,7 @@ If x is a matrix, its diagonal must be or must convert to FALSE.}
 
 \item{threshold}{Second (reference) argument to "compare".}
 
-\item{sep}{Concatonation character for names of objects with identical
+\item{sep}{Concatenation character for names of objects with identical
 similarity / dissimilarity patterns.  The output of multcompTs is matrix for
 which the number of rows = (number of columns + number of uses of the "sep"
 character).}
@@ -30,11 +30,11 @@ character).}
 An object of class "multcompTs", which is a matrix of values -1, 0,
 1, with one row for each level compared and one column for each "T", read as
 follows: 1 = base of the "T" represented by that column, 0 = level(s) not
-significantly different, and (-1) = leves(s) significantly different.  If
+significantly different, and (-1) = levels(s) significantly different.  If
 two or more levels have the same pattern of significant and insignificant
 differences, they are combined into a single column that can be represented
 by a "T" with multiple bases.  The column name will be a character string
-concatonating all row names with "1" in that column separated by the "sep"
+concatenating all row names with "1" in that column separated by the "sep"
 character.  Thus, the matrix should have as many 1's as it has rows.  Also,
 the lower triangular portion should have as many "-1's" as there are "TRUE"
 (e.g., significant) differences among the comparisons.

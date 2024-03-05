@@ -60,7 +60,7 @@
 #' levels as a proportion of the plot range; NA for no level labels.
 #' @param label.groups Distance from the plot region to print the names of the
 #' groups as a proportion of the plot range; NA for no level labels.
-#' @param orientation If 'reversed', the base(s) of each "T" or traingle
+#' @param orientation If 'reversed', the base(s) of each "T" or triangle
 #' indicating the master level(s) of that "undifferentiated class" will point
 #' right or up (depending on horizontal) rather than down or left.
 #' @param ...  graphical parameters can be given as described on the

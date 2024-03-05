@@ -1,7 +1,7 @@
 #' Extracts p-values
 #' 
 #' For a given object it will look for the column named "p adj" or "difference"
-#' and extract its value mantaining its names
+#' and extract its value keeping its names
 #' 
 #' 
 #' @aliases extract_p extract_p.default extract_p.TukeyHSD extract_p.mc

@@ -13,7 +13,7 @@ vec2mat2(x, sep = "-")
 }
 \value{
 A character matrix with rownames = x and with the character string
-preceeding the "sep" character in the first column and the character string
+preceding the "sep" character in the first column and the character string
 following the "sep" character in the second column.
 }
 \description{

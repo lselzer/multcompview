@@ -23,7 +23,7 @@ A named vector with p-values or logical values.
 }
 \description{
 For a given object it will look for the column named "p adj" or "difference"
-and extract its value mantaining its names
+and extract its value keeping its names
 }
 \section{Methods (by class)}{
 \itemize{
