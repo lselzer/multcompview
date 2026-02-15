@@ -125,7 +125,7 @@ Bretz and Sarkar (eds) Recent Developments in Multiple Comparison Procedures
 47)
 
 Spencer Graves and Hans-Peter Piepho (2006) "Simple Visualizations of Paired
-Comparisons", \href{../doc/VisualizingPairedComparisons.pdf}{\code{vignette("VisualizingPairedComparisons", package = "multcompView")}}
+Comparisons". See  \code{system.file("extdata", "VisualizingPairedComparisons.pdf", package = "multcompView")}.
 }
 \seealso{
 \code{\link{multcompBoxplot}} \code{\link{multcompLetters}}
