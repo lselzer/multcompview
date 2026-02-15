@@ -49,7 +49,11 @@
 #' 47)
 #' 
 #' Spencer Graves and Hans-Peter Piepho (2006) "Simple Visualizations of Paired
+<<<<<<< HEAD
 #' Comparisons". See  \code{system.file("extdata", "VisualizingPairedComparisons.pdf", package = "multcompView")}. 
+=======
+#' Comparisons". See \link[=VisualizingPairedComparisons]{the vignette}. 
+>>>>>>> a17e7ef97c3f0c7533b5a8aba794e212eda2c9e9
 #' 
 #' @keywords dplot
 #' @export
