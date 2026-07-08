@@ -229,8 +229,11 @@ function(x, compare="<",
     Ltrs <- rep(Letters[1], n)
     names(Ltrs) <- Lvls
     dimnames(LetMat)[[2]] <- Letters[1]
-    return(list(Letters=Ltrs,
-                LetterMatrix=LetMat))  
+    return(structure(
+              list(Letters=Ltrs,
+                   monospacedLetters=Ltrs,
+                   LetterMatrix=LetMat),
+              class="multcompLetters"))  
   }
 ##
 ## 4.  At last 2 levels are different: 
