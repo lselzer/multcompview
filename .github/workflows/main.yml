@@ -23,12 +23,18 @@ jobs:
             libxml2-dev \
             libssl-dev \
             libcurl4-openssl-dev \
-            libgit2-dev \
+            libfontconfig1-dev \
+            libfreetype6-dev \
+            libpng-dev \
+            libtiff5-dev \
+            libjpeg-dev \
+            libharfbuzz-dev \
+            libfribidi-dev \
             pandoc
-
+      
       - name: Install Package Dependencies
         run: |
-          Rscript -e "install.packages(c('remotes', 'rcmdcheck', 'covr', 'pkgdown'), repos = 'https://cloud.r-project.org')"
+          Rscript -e "install.packages(c('remotes', 'rcmdcheck', 'covr', 'pkgdown', 'bslib', 'fs', 'ragg', 'rmarkdown'), repos = 'https://cloud.r-project.org')"
           Rscript -e "remotes::install_deps(dependencies = TRUE)"
 
       - name: Check Package
