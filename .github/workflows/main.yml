@@ -20,6 +20,7 @@ jobs:
       - name: Install System Dependencies
         run: |
           apt-get update && apt-get install -y --no-install-recommends \
+            libuv1-dev \
             libxml2-dev \
             libssl-dev \
             libcurl4-openssl-dev \
