@@ -61,3 +61,43 @@ test_that("vec2mat preserves input type", {
   names(dif_chr) <- c("a-b", "a-c", "b-c")
   expect_type(vec2mat(dif_chr), "character")
 })
+
+test_that("vec2mat rejects invalid inputs and handles edge cases", {
+  
+  # must be 2-d
+  expect_error(vec2mat(array(1:24, dim = 2:4)), "not allowed")
+  
+  # must be square
+  expect_error(vec2mat(array(1:6, dim = 2:3)), "not allowed")
+  
+  # must be symmetric
+  expect_error(vec2mat(array(1:4, dim = c(2, 2))), "not symmetric")
+  
+  # NAs not allowed
+  expect_error(vec2mat(c(1:3, NA)), "NAs not allowed")
+  
+  # Names required
+  expect_error(vec2mat(1:3), "Names required")
+  
+  # missing hyphen
+  errVec2 <- 1:3
+  names(errVec2) <- c("a", "b-a", "b-c")
+  expect_error(vec2mat(errVec2), "exactly one")
+  
+  # multiple hyphens
+  errVec3 <- 1:3
+  names(errVec3) <- c("a-c", "b-a", "b-c-d")
+  expect_error(vec2mat(errVec3), "exactly one")
+  
+  # Both "b-a" and "a-b" specified → uses the latest
+  dif4 <- 1:4
+  names(dif4) <- c("a-b", "a-c", "b-c", "b-a")
+  m <- vec2mat(dif4)
+  expect_equal(m["a", "b"], 4)   # se queda con el último valor
+})
+
+test_that("vec2mat allows matrices with non-standard diagonal", {
+  expect_no_error(vec2mat(array(1, dim = c(2, 2))))
+  expect_no_error(vec2mat(array(TRUE, dim = c(2, 2))))
+  expect_no_error(vec2mat(array("a", dim = c(2, 2))))
+})
