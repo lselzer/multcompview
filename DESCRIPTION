@@ -18,5 +18,9 @@ Imports:
 Suggests:
     multcomp,
     pgirmess,
-    MASS
+    MASS,
+    testthat (>= 3.0.0)
 RoxygenNote: 7.3.3
+URL: https://lselzer.github.io/multcompView/
+BugReports: https://github.com/lselzer/multcompView/issues
+Config/testthat/edition: 3

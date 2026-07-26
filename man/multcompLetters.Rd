@@ -149,16 +149,15 @@ dxLtrs <- multcompLetters(d3, compare=">", threshold=2)
 d3d <- dist(x, diag=TRUE)
 dxdLtrs <- multcompLetters(d3d, compare=">", threshold=2)
 
-\dontshow{stopifnot(}
+\dontshow{stopifnot(all.equal(dxTs, dxuTs))}
 all.equal(dxLtrs, dxdLtrs)
-\dontshow{)}
+
 
 d3u <- dist(x, upper=TRUE)
-dxuLtrs <- multcompLetters(d3d, compare=">", threshold=2)
+dxuLtrs <- multcompLetters(d3u, compare=">", threshold=2)
 
-\dontshow{stopifnot(}
+\dontshow{stopifnot(all.equal(dxTs, dxuLtrs))}
 all.equal(dxLtrs, dxuLtrs)
-\dontshow{)}
 
 ##
 ## 4.  cor matrix
@@ -177,7 +176,7 @@ cxLtrs <- multcompLetters(abs(cx), threshold=.3)
 dif3 <- c(FALSE, FALSE, TRUE)
 names(dif3) <- c("A-B", "A-C", "B-C")
 dif3L <- multcompLetters(dif3)
-dif3L.R <- multcompLetters(dif3, rev = TRUE)
+dif3L.R <- multcompLetters(dif3, reversed = TRUE)
 dif3L
 dif3L.R
 

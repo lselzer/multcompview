@@ -93,16 +93,14 @@
 #' d3d <- dist(x, diag=TRUE)
 #' dxdTs <- multcompTs(d3d, compare=">", threshold=2)
 #' 
-#' \dontshow{stopifnot(}
+#' \dontshow{stopifnot(all.equal(dxTs, dxdTs))}
 #' all.equal(dxTs, dxdTs)
-#' \dontshow{)}
 #' 
 #' d3u <- dist(x, upper=TRUE)
-#' dxuTs <- multcompTs(d3d, compare=">", threshold=2)
+#' dxuTs <- multcompTs(d3u, compare=">", threshold=2)
 #' 
-#' \dontshow{stopifnot(}
+#' \dontshow{stopifnot(all.equal(dxTs, dxuTs))}
 #' all.equal(dxTs, dxuTs)
-#' \dontshow{)}
 #' 
 #' ##
 #' ## 4.  cor matrix
