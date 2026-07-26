@@ -6,7 +6,7 @@ test_that("vec2mat works with logical vector", {
   
   expect_true(is.matrix(m))
   expect_equal(dim(m), c(3, 3))
-  expect_equal(diag(m), c(FALSE, FALSE, FALSE))
+  expect_equal(unname(diag(m)), c(FALSE, FALSE, FALSE))
   expect_equal(m["a", "b"], FALSE)
   expect_equal(m["b", "c"], TRUE)
 })
