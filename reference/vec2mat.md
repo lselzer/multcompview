@@ -74,16 +74,4 @@ vec2mat(array(1, dim=c(2,2)))
 #>      [,1] [,2]
 #> [1,]    1    1
 #> [2,]    1    1
-#> Error in vec2mat(array(1:24, dim = 2:4)) : 
-#>   Array of dim(2, 3, 4) not allowed for array(1:24, dim = 2:4)
-#> Error in vec2mat(array(1:6, dim = 2:3)) : 
-#>   Array of dim(2, 3) not allowed for array(1:6, dim = 2:3)
-#> Error in vec2mat(array(1:4, dim = c(2, 2))) : 
-#>   Matrix not symmetric array(1:4, dim = c(2, 2))
-#> Error in vec2mat(c(1:3, NA)) : 1 NAs not allowed, found in c(1:3, NA)
-#> Error in vec2mat(1:3) : Names required for 1:3
-#> Error in vec2mat2(namx, sep) : 
-#>   Names must contain exactly one '-' each;  instead got a, b-a, b-c
-#> Error in vec2mat2(namx, sep) : 
-#>   Names must contain exactly one '-' each;  instead got a-c, b-a, b-c-d
 ```
