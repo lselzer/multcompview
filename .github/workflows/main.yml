@@ -32,6 +32,7 @@ jobs:
             libwebp-dev \
             libharfbuzz-dev \
             libfribidi-dev \
+            libudunits2-dev \
             pandoc \
             pkg-config
       

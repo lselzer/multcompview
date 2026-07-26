@@ -1,0 +1,33 @@
+url: https://lselzer.github.io/multcompView/
+
+template:
+  bootstrap: 5
+  light-switch: true
+  bslib:
+    primary: "#0054AD"
+    border-radius: 0.5rem
+    btn-border-radius: 0.25rem
+
+home:
+  title: multcompView
+  description: >
+    Visualizations of Paired Comparisons
+
+reference:
+- title: "Main functions"
+  contents:
+  - starts_with("multcomp")
+  - extract_p
+  - plot.multcompTs
+  - print.multcompTs
+  - print.multcompLetters
+
+- title: "Internal / Helpers"
+  contents:
+  - matches(".*")
+
+news:
+  one_page: true
+
+development:
+  mode: auto
