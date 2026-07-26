@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+revdep
+CRAN-SUBMISSION
+docs
+pre_release.R
