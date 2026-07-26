@@ -111,14 +111,12 @@
 #' d3d <- dist(x, diag=TRUE)
 #' dxdLtrs <- multcompLetters(d3d, compare=">", threshold=2)
 #' 
-#' \dontshow{stopifnot(all.equal(dxTs, dxuTs))}
 #' all.equal(dxLtrs, dxdLtrs)
 #' 
 #' 
 #' d3u <- dist(x, upper=TRUE)
 #' dxuLtrs <- multcompLetters(d3u, compare=">", threshold=2)
 #' 
-#' \dontshow{stopifnot(all.equal(dxTs, dxuLtrs))}
 #' all.equal(dxLtrs, dxuLtrs)
 #' 
 #' ##
