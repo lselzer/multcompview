@@ -33,6 +33,9 @@ jobs:
             libharfbuzz-dev \
             libfribidi-dev \
             libudunits2-dev \
+            libgdal-dev \
+            libgeos-dev \
+            libproj-dev \
             pandoc \
             pkg-config
       
